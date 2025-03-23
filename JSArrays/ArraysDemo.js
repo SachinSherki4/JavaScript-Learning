@@ -49,5 +49,3 @@ console.log(typeof fruits) //object
 console.log(Array.isArray(fruits)) // true
 
 
-
-
