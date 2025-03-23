@@ -1,0 +1,20 @@
+<html>
+    <head>Head Tag</head>
+    <body>
+       <!--- <p type="text">This is under Body Tag</p> -->
+        <button id="butn">Click Me</button>
+        <p id="Text"></p>
+    </body>
+    <script>
+        document.write("<h2>This is  Script Tag</h2>") 
+        document.getElementById("butn").onclick=clickFunction;
+        function clickFunction(){
+            document.getElementById("Text").innerHTML="This show only after clicking on Button";
+            console.log("This is to print logs in console before click action reflecting on web page")
+        }
+
+       // console.log("This is to print logs in console before print text to web page.")
+        console.log("This is to print logs in console before print text to web page.")
+        console.log("This is to print logs in console before print text to web page.")
+    </script>
+</html>

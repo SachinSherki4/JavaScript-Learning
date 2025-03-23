@@ -1,0 +1,38 @@
+<html>
+    <head>Calculator</head>
+    <bod>
+        <input id="val1"/>
+        <input id="val2"/>
+        <br>
+        <button id="addButt">Add</button>
+        <button id="subButt">Sub</button>
+        <button id="mulButt">Mul</button>
+        <p id="Result" >  </p> <!--Variable to Capture and display the result  -->
+    </bod>
+    <script> 
+        document.getElementById("addButt").onclick=addNum;
+        document.getElementById("subButt").onclick=subNum;
+        document.getElementById("mulButt").onclick=mulNum;
+
+        function addNum(){
+            let {a,b}=getValues();
+            document.getElementById("Result").innerHTML=a+b;
+        }
+        function subNum(){
+            let {a,b}=getValues();
+            document.getElementById("Result").innerHTML=a-b;
+        }
+        function mulNum(){
+            let {a,b}=getValues();
+            document.getElementById("Result").innerHTML=a*b;
+        }
+
+        // Generic method which will print values in two input boxes.
+        function getValues(){
+            let a=parseInt(document.getElementById("val1").value) || 0; // This will parse it to Int with default value as zero
+            let b=parseInt(document.getElementById("val2").value) || 0;
+            return {a,b};
+        }
+
+    </script>
+</html>
